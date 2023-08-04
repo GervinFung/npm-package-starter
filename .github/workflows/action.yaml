@@ -4,20 +4,30 @@ on: [push, pull_request]
 
 jobs:
     all:
-        runs-on: ubuntu-latest
+        runs-on: ${{ matrix.os }}
+
         strategy:
             fail-fast: false
             matrix:
-                threads:
-                    - '4'
+                os: [ubuntu-latest, windows-latest]
+                node-version: [18, 20]
+                threads: [4]
+
+        name: Test with Node v${{ matrix.node }} on ${{ matrix.os }}
+
         steps:
             - name: Checkout Code
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
 
-            - name: Install PNPM
-              run: |
-                  sudo apt install npm
-                  npm i --location=global pnpm
+            - uses: pnpm/action-setup@v2
+              with:
+                  version: 8
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: 'pnpm'
+
 
             - name: Install Depedencies
               run: pnpm i
