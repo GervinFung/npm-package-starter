@@ -13,7 +13,7 @@ jobs:
                 node-version: [18, 20]
                 threads: [4]
 
-        name: Test with Node ${{ matrix.node }} on ${{ matrix.os }}
+        name: Test with Node ${{ matrix.node-version }} on ${{ matrix.os }}
 
         steps:
             - name: Checkout Code
