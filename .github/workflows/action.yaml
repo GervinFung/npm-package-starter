@@ -1,4 +1,4 @@
-name: ts-add-js-extension-ci-cd
+name: npm-package-starter-ci-cd
 
 on: [push, pull_request]
 
