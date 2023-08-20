@@ -36,7 +36,7 @@
 		"url": "https://github.com/GervinFung/npm-package-starter"
 	},
 	"devDependencies": {
-		"@poolofdeath20/eslint-config": "^0.1.0",
+		"@poolofdeath20/eslint-config": "^0.2.1",
 		"@poolofdeath20/prettier-config-generator": "^0.0.1",
 		"@types/node": "^20.4.7",
 		"@typescript-eslint/eslint-plugin": "^5.62.0",
