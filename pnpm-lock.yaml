@@ -8,6 +8,9 @@ devDependencies:
   '@poolofdeath20/eslint-config':
     specifier: ^0.1.0
     version: 0.1.0(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-import@2.28.0)(eslint-plugin-jsx-a11y@6.7.1)(eslint-plugin-react@7.33.1)(eslint-plugin-styled-components-a11y@2.1.31)(eslint@8.46.0)
+  '@poolofdeath20/prettier-config-generator':
+    specifier: ^0.0.1
+    version: 0.0.1(prettier@3.0.1)
   '@types/node':
     specifier: ^20.4.7
     version: 20.4.7
@@ -22,7 +25,7 @@ devDependencies:
     version: 8.46.0
   node-package-helper:
     specifier: github:GervinFung/node-package-helper
-    version: github.com/GervinFung/node-package-helper/b53f81c0fa827e4a0d6b622dbfe1b79d126a8a1f
+    version: github.com/GervinFung/node-package-helper/d7a733bb29fa6accf38ecfa13c1c7d290fa1f75a
   prettier:
     specifier: ^3.0.1
     version: 3.0.1
@@ -378,6 +381,15 @@ packages:
       eslint-plugin-jsx-a11y: 6.7.1(eslint@8.46.0)
       eslint-plugin-react: 7.33.1(eslint@8.46.0)
       eslint-plugin-styled-components-a11y: 2.1.31(eslint@8.46.0)
+    dev: true
+
+  /@poolofdeath20/prettier-config-generator@0.0.1(prettier@3.0.1):
+    resolution: {integrity: sha512-atxxX3ZvScrgUZmTfqevDPCwkkobF+cUfkPOCqCAV+xg4xglwp7lCkWwFE9L5XBf7DDKojxClTSeeGVWSFno9w==}
+    hasBin: true
+    peerDependencies:
+      prettier: '*'
+    dependencies:
+      prettier: 3.0.1
     dev: true
 
   /@types/chai-subset@1.3.3:
@@ -1024,7 +1036,7 @@ packages:
     dependencies:
       debug: 3.2.7
       is-core-module: 2.12.1
-      resolve: 1.22.2
+      resolve: 1.22.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2039,7 +2051,7 @@ packages:
     resolution: {integrity: sha512-HFM8rkZ+i3zrV+4LQjwQ0W+ez98pApMGM3HUrN04j3CqzPOzl9nmP15Y8YXNm8QHGv/eacOVEjqhmWpkRV0NAw==}
     engines: {node: '>= 0.10'}
     dependencies:
-      resolve: 1.22.2
+      resolve: 1.22.3
     dev: true
 
   /regenerator-runtime@0.13.11:
@@ -2058,15 +2070,6 @@ packages:
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
-    dev: true
-
-  /resolve@1.22.2:
-    resolution: {integrity: sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==}
-    hasBin: true
-    dependencies:
-      is-core-module: 2.12.1
-      path-parse: 1.0.7
-      supports-preserve-symlinks-flag: 1.0.0
     dev: true
 
   /resolve@1.22.3:
@@ -2630,10 +2633,10 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  github.com/GervinFung/node-package-helper/b53f81c0fa827e4a0d6b622dbfe1b79d126a8a1f:
-    resolution: {tarball: https://codeload.github.com/GervinFung/node-package-helper/tar.gz/b53f81c0fa827e4a0d6b622dbfe1b79d126a8a1f}
+  github.com/GervinFung/node-package-helper/d7a733bb29fa6accf38ecfa13c1c7d290fa1f75a:
+    resolution: {tarball: https://codeload.github.com/GervinFung/node-package-helper/tar.gz/d7a733bb29fa6accf38ecfa13c1c7d290fa1f75a}
     name: node-package-helper
-    version: 0.1.5
+    version: 0.2.0
     hasBin: true
     requiresBuild: true
     dependencies:
