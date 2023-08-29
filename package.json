@@ -38,15 +38,15 @@
 	"devDependencies": {
 		"@poolofdeath20/eslint-config": "^0.2.1",
 		"@poolofdeath20/prettier-config-generator": "^0.0.1",
-		"@types/node": "^20.4.7",
+		"@types/node": "^20.5.7",
 		"@typescript-eslint/eslint-plugin": "^5.62.0",
 		"@typescript-eslint/parser": "^5.62.0",
-		"eslint": "^8.46.0",
+		"eslint": "^8.48.0",
 		"node-package-helper": "github:GervinFung/node-package-helper",
-		"prettier": "^3.0.1",
+		"prettier": "^3.0.2",
 		"ts-add-js-extension": "^1.5.8",
-		"typescript": "^5.1.6",
-		"vite-node": "^0.34.1",
+		"typescript": "^5.2.2",
+		"vite-node": "^0.34.3",
 		"vitest": "^0.31.4"
 	}
 }
