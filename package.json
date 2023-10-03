@@ -20,8 +20,9 @@
 		"build"
 	],
 	"scripts": {
-		"lint": "pnpm vite-node script/lint.ts",
-		"format": "prettier-config-generate && prettier .",
+		"postinstall": "prettier-config-generate",
+		"lint": "eslint . --ignore-path .gitignore --ext .ts --color",
+		"format": "prettier .",
 		"format-write": "pnpm format --write",
 		"format-check": "pnpm format --check",
 		"typecheck": "tsc --noEmit",
@@ -36,17 +37,17 @@
 		"url": "https://github.com/GervinFung/npm-package-starter"
 	},
 	"devDependencies": {
-		"@poolofdeath20/eslint-config": "^0.2.1",
+		"@poolofdeath20/eslint-config": "^0.3.1",
 		"@poolofdeath20/prettier-config-generator": "^0.0.1",
-		"@types/node": "^20.5.7",
-		"@typescript-eslint/eslint-plugin": "^5.62.0",
-		"@typescript-eslint/parser": "^5.62.0",
-		"eslint": "^8.48.0",
+		"@types/node": "^20.8.2",
+		"@typescript-eslint/eslint-plugin": "^6.7.4",
+		"@typescript-eslint/parser": "^6.7.4",
+		"eslint": "^8.50.0",
 		"node-package-helper": "github:GervinFung/node-package-helper",
-		"prettier": "^3.0.2",
+		"prettier": "^3.0.3",
 		"ts-add-js-extension": "^1.5.8",
 		"typescript": "^5.2.2",
-		"vite-node": "^0.34.3",
-		"vitest": "^0.31.4"
+		"vite-node": "^0.34.6",
+		"vitest": "^0.34.6"
 	}
 }

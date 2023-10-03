@@ -1,3 +1,5 @@
-const main = () => 1;
+const main = () => {
+	return 1;
+};
 
 export default main;
