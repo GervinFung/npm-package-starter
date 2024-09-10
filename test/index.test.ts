@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+
 import main from '../src';
 
 describe('should test', () => {
