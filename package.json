@@ -40,13 +40,13 @@
 		"@poolofdeath20/eslint-config": "^0.4.1",
 		"@poolofdeath20/prettier-config-generator": "^0.0.1",
 		"@poolofdeath20/tsconfig": "^0.1.1",
-		"@types/node": "^22.7.4",
-		"eslint": "^9.10.0",
+		"@types/node": "^22.8.7",
+		"eslint": "^9.14.0",
 		"node-package-helper": "github:GervinFung/node-package-helper",
 		"prettier": "^3.3.3",
 		"ts-add-js-extension": "^1.6.4",
-		"typescript": "^5.6.2",
-		"vite-node": "^2.1.1",
-		"vitest": "^2.1.1"
+		"typescript": "^5.6.3",
+		"vite-node": "^2.1.4",
+		"vitest": "^2.1.4"
 	}
 }
